@@ -10,7 +10,7 @@
      crossorigin="">
 </script>
  <style type="text/css">
- #issmap { height: 480px; }
+ #thismap { height: 480px; }
  </style>    
 <title></title>
 </head>
@@ -33,7 +33,7 @@ const attribution =
 
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const tiles = L.tileLayer(tileUrl, { attribution });
-tiles.addTo(thismap);
+tiles.addTo(myMap);
 const marker = L.marker([0, 0]).addTo(myMap);
 const zoomLevel = 5;
 // add your code below
